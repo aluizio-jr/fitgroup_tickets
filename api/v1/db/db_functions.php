@@ -1,6 +1,7 @@
 <?php
 
 function tabelaNextId($tabela, $campo) {
+    
     $conn = bdConnectErp();
     if ($conn) {
         $str_sql = "SELECT MAX(" . $campo . ") AS last_id 

@@ -3,6 +3,7 @@
     require_once '../db/db_functions.php';
 
     function convert_to_utf8_recursively($dat) {
+      
         if(is_string($dat) ) {
           return mb_convert_encoding($dat, 'UTF-8', 'UTF-8');
         
